@@ -20,7 +20,7 @@
 <body>
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="/">INICIO</a>
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -28,27 +28,31 @@
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
      <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <a class="nav-link active" aria-current="page" href="#">Bebidas</a>
      </li>
      <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Promos</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Contacto</a>
      </li>
      <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-       Dropdown
+       Menu
       </a>
       <ul class="dropdown-menu">
-       <li><a class="dropdown-item" href="#">Action</a></li>
-       <li><a class="dropdown-item" href="#">Another action</a></li>
-       <li>
+       <li><a class="dropdown-item" id="btn_pizzas">Pizzas</a></li>
+       <li><a class="dropdown-item" id="btn_lomos">Lomos</a></li>
+       <li><a class="dropdown-item" id="btn_empanadas">Empanadas</a></li>
+       <!-- <li>
         <hr class="dropdown-divider">
        </li>
-       <li><a class="dropdown-item" href="#">Something else here</a></li>
+       <li><a class="dropdown-item" href="#">Something else here</a></li> -->
       </ul>
+      <!-- <li class="nav-item">
      </li>
-     <li class="nav-item">
       <a class="nav-link disabled">Disabled</a>
-     </li>
+     </li> -->
     </ul>
     <form class="d-flex" role="search">
      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,11 +62,22 @@
   </div>
  </nav>
 
- <h1>Web Pedidos | e-commerce simple</h1>
- <nav class="links"></nav>
-
-
  <main>
+  <section class="menu">
+   <figure class="menu-card" id="btn_pizzas">
+    <img src="/assets/pizza1.jpg" alt="pizzas" id="btn_pizzas">
+    <h3 id="btn_pizzas">Pizzas</h3>
+   </figure>
+   <figure class="menu-card" id="btn_lomos">
+    <img src="/assets/lomo1.jpg" alt="lomos" id="btn_lomos">
+    <h3 id="btn_lomos">Lomos</h3>
+   </figure>
+   <figure class="menu-card" id="btn_empanadas">
+    <img src="/assets/empanadas1.jpg" alt="empanadas" id="btn_empanadas">
+    <h3 id="btn_empanadas">Empanadas</h3>
+   </figure>
+  </section>
+
   <section class="grid-fluid cards">
 
    <template id="template-card">
